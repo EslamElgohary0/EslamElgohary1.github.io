@@ -1,0 +1,455 @@
+/* Start Variables */
+:root {
+  --main-color: #10cab7;
+  --secondary-color: #2c4755;
+  --section-padding: 60px;
+  --section-background: #f6f6f6;
+  --main-duration: 0.5s;
+}
+
+/* End Variables */
+
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+.container {
+  padding: 0px 30px;
+  box-shadow: 0px -6px 15px 1px black;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* End Global Rules */
+
+/* Start Header */
+.header {
+  display: grid;
+  justify-content: space-between;
+  align-content: space-between;
+  grid-template-columns: 27% 42% 27%;
+  gap: 5px;
+}
+
+.header>div {
+  width: 100%;
+  height: 40px;
+  display: flex;
+}
+
+.header .logo {
+  justify-content: left;
+  align-items: center;
+}
+
+.header .logo .text {
+  font-size: 12px;
+  letter-spacing: -1px;
+}
+
+.header .sales {
+  justify-content: center;
+  align-items: center;
+}
+
+.header .sales .text {
+  position: relative;
+  width: 90%;
+  height: 75%;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  letter-spacing: -1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .sales .text::before,
+.header .sales .text::after {
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: black;
+}
+
+.header .sales .text::before {
+  left: -15px;
+  top: 0;
+}
+
+.header .sales .text::after {
+  right: -15px;
+  top: 0;
+}
+
+.header .links {
+  justify-content: end;
+  align-items: center;
+}
+
+.header .links .text {
+  margin-left: 20px;
+  letter-spacing: -1px;
+  font-size: 14px;
+  color: black;
+  text-transform: capitalize;
+}
+
+.header .second-links {
+  align-items: center;
+  display: none; /* Hide second links on smaller screens */
+}
+
+.header .title {
+  justify-content: center;
+  align-items: center;
+}
+
+.header .title .text {
+  color: black;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+.header .icons {
+  position: relative;
+  justify-content: end;
+  align-items: center;
+}
+
+.header .icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .icons img {
+  width: 20px;
+  margin-left: 30px;
+}
+
+.header .icons .number {
+  position: absolute;
+  right: -20px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: #c0392b;
+  color: #ecf0f1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* End Header */
+
+/* Start Section */
+.section>.image {
+  width: 100%;
+  height: 800px;
+  position: relative;
+  margin-bottom: 65px;
+}
+
+.section .image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.section .image .text {
+  width: 350px;
+  height: 340px;
+  position: absolute;
+  right: 200px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.section .image .text h2 {
+  font-weight: bold;
+  color: white;
+  font-size: 137px;
+  margin: 0px;
+  position: absolute;
+  top: -10px;
+}
+
+.section .image .text h3 {
+  font-weight: bold;
+  color: black;
+  font-size: 64px;
+  margin: 0px;
+  position: absolute;
+  top: 130px;
+}
+
+.section .image .text>p {
+  font-size: 29px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  top: 180px;
+}
+
+.section .image a p {
+  color: white;
+  background-color: black;
+  padding: 0px 10px;
+  position: relative;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+  transform: translate(-50%);
+  left: 50%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin: 0px;
+}
+
+.section .image a p::before,
+.section .image a p::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.section .image a p::before {
+  left: -14px;
+  top: 0px;
+}
+
+.section .image a p::after {
+  right: -14px;
+  top: 0px;
+}
+
+.section .products {
+  padding: 0px 30px;
+}
+
+.section .products .heading {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.section .products .heading::before {
+  position: absolute;
+  content: "";
+  background-color: black;
+  height: 3px;
+  width: 70px;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section .products .catagries {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.section .products .catagries .cate {
+  height: 30px;
+  margin: 0px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: white;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  transition-duration: 0.6s;
+}
+
+.section .products .catagries .cate:hover {
+  background-color: black;
+}
+
+.section .products .catagries .cate:hover::after,
+.section .products .catagries .cate:hover::before {
+  background-color: black;
+}
+
+.section .products .catagries .cate:hover a {
+  color: white;
+}
+
+.section .products .catagries .cate::before,
+.section .products .catagries .cate::after {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  border: 2px solid black;
+  border-radius: 50%;
+  z-index: -1;
+  box-sizing: border-box;
+  transition-duration: 0.6s;
+}
+
+.section .products .catagries .cate::before {
+  left: 0px;
+  transform: translateX(-50%);
+}
+
+.section .products .catagries .cate::after {
+  right: 0px;
+  transform: translateX(50%);
+}
+
+.section .products .catagries .cate a {
+  color: black;
+  padding: 5px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition-duration: 0.6s;
+}
+
+.section .products .catagries .active {
+  background-color: black;
+}
+
+.section .products .catagries .active::before,
+.section .products .catagries .active::after {
+  background-color: black;
+}
+
+.section .products .catagries .active a {
+  color: white;
+}
+
+.section .products .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust to fit a minimum of 200px wide columns */
+  grid-gap: 20px; /* Add some gap between grid items */
+}
+
+/* Adjust number of columns for larger screens */
+@media (min-width: 1024px) {
+  .section .products .cards {
+    grid-template-columns: repeat(4, 1fr); /* Ensure maximum of 4 columns for larger screens */
+  }
+}
+
+.section .products .one-product {
+  background-color: #eee;
+}
+
+.section .products .cards .image {
+  height: 300px;
+  background-size: cover;
+  transition: 0.6s;
+}
+
+.section .products .cards .image-1 {
+  background-image: url(./images/frist-card.jpg);
+}
+
+.section .products .cards .image-2 {
+  background-image: url(./images/second-card.jpg);
+}
+
+.section .products .cards .image-3 {
+  background-image: url(./images/frist-card.jpg);
+}
+
+.section .products .cards .image-4 {
+  background-image: url(./images/second-card.jpg);
+}
+
+.section .products .cards .image-5 {
+  background-image: url(./images/frist-card.jpg);
+}
+
+.section .products .cards .image-6 {
+  background-image: url(./images/second-card.jpg);
+}
+
+.section .products .cards .image-7 {
+  background-image: url(./images/frist-card.jpg);
+  background-position-y: -300px;
+}
+
+.section .products .cards .image-8 {
+  background-image: url(./images/second-card.jpg);
+}
+
+.section .products .cards .image:hover {
+  box-shadow: 0px 0px 20px -4px black;
+  transform: scale(1.05);
+}
+
+.section .products .cards p,
+.section .products .cards .price {
+  margin: 0px 20px;
+  text-align: center;
+}
+
+.section .products .cards p {
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.section .products .cards .buying {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 30px;
+  margin-top: 10px;
+}
+
+.section .products .cards .buying .price {
+  color: rgb(199, 0, 0);
+  margin-bottom: 10px;
+  margin-top: 5px;
+  position: absolute;
+}
+
+.section .products .cards .buying i {
+  position: absolute;
+  right: 90px;
+  color: red;
+}
+
+.section .products .cards .buying i:nth-of-type(2) {
+  position: absolute;
+  right: 60px;
+  color: black;
+}
+
+/* End Section */

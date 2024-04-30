@@ -1,0 +1,297 @@
+/* Start Variables */
+
+
+/* End Variables */
+
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+.container {
+  padding: 0px 30px;
+  box-shadow: 0px -6px 15px 1px black;
+
+}
+
+li {
+  list-style: none;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+/* End Global Rules */
+/* Start Header */
+.header {
+  display: grid;
+  justify-content: space-between;
+  align-content: space-between;
+  grid-template-columns: 27% 42% 27%;
+  gap: 5px;
+}
+
+.header>div {
+  width: 100%;
+  height: 40px;
+  display: flex;
+}
+
+.header .logo {
+  justify-content: left;
+  align-items: center;
+}
+
+.header .logo .text {
+  font-size: 12px;
+  letter-spacing: -1px;
+}
+
+.header .sales {
+  justify-content: center;
+  align-items: center;
+
+}
+
+.header .sales .text {
+  position: relative;
+  width: 90%;
+  height: 75%;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  letter-spacing: -1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .sales .text::before {
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  left: -15px;
+  top: 0;
+}
+
+.header .sales .text::after {
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  right: -15px;
+  top: 0;
+}
+
+.header .links {
+  justify-content: end;
+  align-items: center;
+}
+
+.header .links .text {
+  margin-left: 20px;
+  letter-spacing: -1px;
+  font-size: 14px;
+  color: black;
+  text-transform: capitalize;
+}
+
+.header .second-links {
+  align-items: center;
+}
+
+.header .second-links .text {
+  color: black;
+  margin-right: 25px;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.header .title {
+  justify-content: center;
+  align-items: center;
+}
+
+.header .title .text {
+  color: black;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+.header .icons {
+  position: relative;
+  justify-content: end;
+  align-items: center;
+}
+
+.header .icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .icons img {
+  width: 20px;
+  margin-left: 30px;
+}
+
+.header .icons .number {
+  position: absolute;
+  right: -20px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: #c0392b;
+  color: #ecf0f1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* End Header */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+}
+
+
+li {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+/* End Global Rules */
+
+.background-color {
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+}
+
+.wishlist-container {
+    background-color: #ddd;
+    width: 50%;
+}
+
+.wishlist-container .header {
+    padding-top: 20px;
+    height: fit-content;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px #00000030;
+}
+
+.wishlist-container .header .bar-1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+.wishlist-container .header .bar-1 h1 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0px;
+    margin-right: 15px;
+}
+
+.wishlist-container .header .bar-1 h2 {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0px;
+}
+
+.wishlist-container .header .link {
+    display: flex;
+    justify-content: end;
+    margin-right: 30px;
+}
+
+.wishlist-container .header .link a {
+    color: black;
+    border: 2px solid black;
+    padding: 10px 15px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.wishlist-container .header .link a:hover {
+    background-color: black;
+    color: white;
+}
+
+.wishlist-container .content .product-1 {
+    display: flex;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 20px 0px #00000030;
+}
+
+.wishlist-container .content .product-1 .image {
+    width: 300px;
+    margin-right: 40px;
+    border-right: none;
+}
+
+.wishlist-container .content .product-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wishlist-container .content .product-1 .text {
+    flex: 1;
+}
+
+.wishlist-container .content .product-1 .text p {
+    margin: 0px;
+    margin-top: 40px;
+}
+
+.wishlist-container .content .product-1 .text h3 {
+    margin-top: 60px;
+}
+
+.wishlist-container .content .product-1 .text .cart {
+    display: flex;
+    justify-content: end;
+    margin-right: 40px;
+}
+
+.wishlist-container .content .product-1 .text .cart a {
+    background-color: rgb(18, 199, 199);
+    color: white;
+    padding: 12px 40px;
+    font-size: 14px;
+}
+

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>easy shop  | wish list   </title>
+    <link rel="icon" type="iamge/png" href="images/7-removebg-preview.png">
+    <!-- Main Template CSS File -->
+    <link rel="stylesheet" href="css/leon8.css" />
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="css/normalize8.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&#038;display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">
+        <div class="text">ORIGINAL ESSENTIAL WEAR</div>
+      </div>
+      <div class="sales">
+        <div class="text">SUMMER DISCOUNT: BUY 3 OR MORE. GET 30% OFF</div>
+      </div>
+      <div class="links">
+        <a href="find_store.html">
+          <div class="text">find store</div>
+        </a>
+        <a href="aboutus_2.html">
+          <div class="text">about us</div>
+        </a>
+        <a href="ContactSection (1).html">
+          <div class="text">contact us</div>
+        </a>
+      </div>
+      <div class="second-links">
+        <a href="cart.html">
+          <div class="text">MEN</div>
+        </a>
+        <a href="index7.html">
+          <div class="text">WOMEN</div>
+        </a>
+        <a href="israa.html">
+          <div class="text">KIDS</div>
+        </a>
+      </div>
+      <div class="title">
+        <a href="file:///C:/Users/habib/OneDrive/Desktop/it_project/Home_page/index.html">
+          <div class="text">ESSENTL*</div>
+        </a>
+      </div>
+      <div class="icons">
+        <a href="index.html"><img src="images/Search-Bar.png" alt=""></a>
+        <a href="index6.html"><img src="./images/User.png"
+            alt=""></a>
+        <a href="index8.html"><img src="images/Favourite.png" alt=""></a>
+        <a href="index3.html"><img src="images/Cart Shopping.png" alt=""></a>
+        <div class="number">0</div>
+      </div>
+    </div>
+  </div>
+    <!-- Start WishList -->
+    <div class="background-color">
+        <div class="wishlist-container">
+            <div class="header">
+                <div class="bar-1">
+                    <h1>MY WISHLIST</h1>
+                    <h2>(1 Items)</h2>
+                </div>
+                <div class="link">
+                    <a href="index.html">CONTINUE SHOPPING</a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="product-1">
+                    <div class="image">
+                        <img src="images/frist-card.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <p>JBL FLIP 3 Portable Bluetooth Mobile/Tablet Speaker</p>
+                        <h3>$94.00</h3>
+                        <div class="cart">
+                            <a href="#" onclick="addToCart()">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-1">
+                    <div class="image">
+                        <img src="images/second-card.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <p>JBL FLIP 3 Portable Bluetooth Mobile/Tablet Speaker</p>
+                        <h3>$94.00</h3>
+                        <div class="cart">
+                            <a href="index4.html" onclick="addToCart()">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-1">
+                    <div class="image">
+                        <img src="images/frist-card.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <p>JBL FLIP 3 Portable Bluetooth Mobile/Tablet Speaker</p>
+                        <h3>$94.00</h3>
+                        <div class="cart">
+                            <a href="index4.html" onclick="addToCart()">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-1">
+                    <div class="image">
+                        <img src="images/second-card.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <p>JBL FLIP 3 Portable Bluetooth Mobile/Tablet Speaker</p>
+                        <h3>$94.00</h3>
+                        <div class="cart">
+                            <a href="index4.html" onclick="addToCart()">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End WishList -->
+      <script>
+    let counter = 0;
+
+    function addToCart() {
+      counter++;
+      document.querySelector('.number').innerText = counter;
+    }
+  </script>
+
